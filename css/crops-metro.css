@@ -1,0 +1,156 @@
+﻿.top > li {
+    width: 100%;
+    padding: 0px;
+    background-color:transparent;
+    
+}
+
+.thumbnails > li.tile.tile-spacer {
+  background-color:transparent;
+}
+
+.thumbnails > li {
+  float: left;
+  /*
+    margin-bottom: 25px;
+    margin-left: 20px;
+      */
+  margin-bottom: 5px;
+  margin-left: 5px;
+    
+}
+
+/*.thumbnail {
+  display: block;
+  padding: 1px;
+  line-height: 25px;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}*/
+
+/*li.tile {
+    padding:10px;
+}*/
+
+.thumbnails > li.tile  div
+{
+    height:0px;
+}
+
+.thumbnails > li.tile.tile-double div,
+.thumbnails > li.tile.vspacer div
+{
+    height:50px;
+}
+
+.thumbnails > li.tile h2 {
+  font-size: 2.5em;
+  padding:5px;
+}
+
+/* 
+    The following adjustments to the media queries works!
+    tested in both Chrome, Opera, and IE 11
+    Looks Terrible in IE8
+*/
+
+@media (max-width:479){
+    .thumbnails > li.tile.tile-double {
+         width: 265px;
+         padding:0px;
+    }
+    
+    /* 'li.tile.quad img' needed for opera to full size image within quad tile*/
+    .thumbnails > li.tile.quad, li.tile.quad img {
+         height: 265px;
+         padding:0px;
+    }
+    
+    .thumbnails > li.full 
+    {
+        width: 100%;
+    }
+    
+    .container
+    {
+        width:942%;
+    }
+    
+    li.container 
+    {
+        width:450px;
+        height:300px;
+    }
+}
+
+@media (min-width:479)
+{
+     .thumbnails > li.tile.tile-double {
+             width: 265px;
+                padding:0px;
+    }
+    
+    /* 'li.tile.quad img' needed for opera to full size image within quad tile*/
+    .thumbnails > li.tile.quad, li.tile.quad img {
+         height: 265px;
+    }
+    
+    .thumbnails > li.full 
+    {
+        width: 100%;
+    }
+    
+    .container
+    {
+        width:550%;
+    }
+        
+    li.container 
+    {
+        width:450px;
+        height:300px;
+    }
+}
+
+@media (min-width: 768px), (min-width: 980px),  (min-width: 1200px)
+{
+     .thumbnails > li.tile.tile-double {
+             width: 266px;
+              padding:0px;
+    }
+
+         .thumbnails > li.tile {
+              padding:0px;
+    }
+
+    
+    .thumbnails > li.tile.quad, li.tile.quad img {
+         height: 266px;
+    }
+    
+    .thumbnails > li.full 
+    {
+        width: 100%;
+    }
+    
+    .container
+    {
+        width:400%;
+    }
+    
+    li.container 
+    {
+        width:600px;
+        height:400px;
+    }
+}       
+
